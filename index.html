@@ -1,5 +1,45 @@
-<!DOCTYPE HTML>
-<head></head>
-<body> 
-  <h1>응애</h1>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="login-form" class="hidden">
+            <p>Type name and press Enter!</p>
+            <input required maxlength="15" type="text" placeholder="What is your name?">
+        </form>
+        <form id="logout-form" class="hidden">
+            <span>Logout</span>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <h2 id="clock">00:00:00</h2>
+        <form id="todo-form" class="hidden">
+            <input required type="text" placeholder="What gonna do today?">
+        </form>
+        <ul id="todo-list" class="hidden">
+            <p>Today's Do!</p>
+        </ul>
+        <div id="quotes">
+            <span>in Quote</span><br>
+            <span>in Auther</span>
+        </div>
+        <div id="weather">
+            <span></span>
+            <!--https://www.flaticon.com/kr/free-icons/- 로딩 아이콘  제작자: Freepik - Flaticon-->
+            <span><img src="./images/loading.png" alt="" style="height: 18px; width: 18px;"></span>
+            <span></span>
+        </div>
+    </div>
+    <script src="./js/greeting.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/todolist.js"></script>
+    <script src="./js/weather.js"></script>
 </body>
+</html>

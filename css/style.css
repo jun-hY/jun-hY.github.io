@@ -1,0 +1,172 @@
+body { margin: 0; padding: 0; color: white; }
+
+.hidden {
+    display: none;
+}
+
+.container { 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.backG {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.deleteTodo {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.deleteTodo:hover {
+    opacity: 1;
+}
+
+#login-form {
+    position: absolute;
+    height: 150px;
+    top: 40%;
+    bottom: 40%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#login-form p {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 3px #333;
+}
+
+#login-form input {
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px 10px;
+    font-size: 1.2em;
+    border: 0px solid;
+    box-shadow: 2px 2px 3px #333;
+}
+
+#login-form input:focus {
+    border: 0px solid;
+}
+
+#logout-form {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    opacity: 0.6;
+    transition-duration: .6s;
+    cursor: pointer;
+}
+
+#logout-form:hover {
+    opacity: 1;
+}
+
+#todo-form {
+    position: absolute;
+    text-align: center;
+    left: 10%;
+    right: 10%;
+    bottom: 30%;
+}
+
+#todo-form input {
+    text-align: center;
+    border: 0px solid;
+    font-size: 1.3em;
+    border-radius: 10px;
+    height: 30px;
+}
+
+#todo-form input:focus {
+    border: 0px solid;
+}
+
+#todo-list {
+    width: 15%;
+    position: absolute;
+    padding-bottom: 5px;
+    margin: 0;
+    right: 5%;
+    bottom: 0;
+    transform-origin: 0, 0;
+    z-index: 5;
+    background-color: #333;
+    border-radius: 10px 10px 0 0 ;
+    box-shadow: 2px 2px 3px #333;
+}
+
+#todo-list p {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+#todo-list .deleteTodo {
+    position: absolute;
+    right: 10px;
+}
+
+#greeting {
+    position: absolute;
+    right: 10%;
+    left: 10%;
+    bottom: 35%;
+    text-align: center;
+    text-shadow: 2px 2px 3px #333;
+}
+
+#quotes {
+    position: absolute;
+    bottom: 5px;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    text-shadow: 2px 2px 3px #333;
+}
+
+#clock {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    top: 20%;
+    font-size: 5em;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 3px #333;
+}
+
+#weather {
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    left: 5px;
+    text-shadow: 2px 2px 3px #333;
+}
+
+#weather span img {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    animation: rotate_image 2.5s linear infinite; transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image{ 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
