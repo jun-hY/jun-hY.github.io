@@ -15,7 +15,7 @@ function onGeoOk(position) {
 }
 
 function onGeoErr() {
-    alert("너 어디냐 못찾겠다 꾀꼬리");
+    alert("위치를 못찾겠다 꾀꼬리");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoErr);
